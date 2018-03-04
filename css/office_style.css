@@ -1,0 +1,230 @@
+/*基本样式
+---------------------*/
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    font-size: 12px;
+    border: none;
+}
+
+a img{
+    border: none;
+}
+
+ul,li{
+    margin:0; padding:0;list-style: none;float: left;
+}
+
+a{
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.clear{
+    clear: both;
+}
+
+button{
+    border: none;
+}
+
+/*主框架
+----------------------------------------------    -*/
+#wrap{
+    width:1600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#header{
+    width: 100%;
+}
+
+
+#main{
+    width: 100%;;
+    clear: both;
+    overflow-x: hidden;
+}
+
+#footer{
+    width: 100%;
+    clear: both;
+}
+
+/*顶部
+-----------------------------------------------------*/
+
+
+#top{
+    height: 40px;
+    width: 1600px;
+    left: 0;
+}
+
+#logo img{
+    width: 108px;
+    height: 23px;
+    float: left;
+}
+
+#top .top_right{
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+/*底部信息展示
+---------------------------------------------------*/
+#footer{
+    position: relative;
+    background: #f2f2f2;
+    margin:-40px 0 0 0;
+}
+#footer .footer_box{
+    padding: 50px 50px 0 50px;
+}
+#footer a{
+    color: #707070;
+}
+
+.detailed{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailed .info2 .caidan1{
+    float: none;
+    clear: both;
+}
+#footer .info2 h3{
+    margin-bottom: 15px;
+}
+#footer .wangluobeian{
+    height: 40px;
+    line-height: 40px;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.wangluobeian .lg_img{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5%;
+}
+.wangluobeian .lg_img span{
+    font-size: 12px;
+    float: right;
+}
+.wangluobeian .lg_img img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.wangluobeian ul li{
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

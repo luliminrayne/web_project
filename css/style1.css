@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "microsoft yahei", Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 13px;
+}
+.apple-banner {
+	width: 1600px;
+	height: 600px;
+	position: relative;
+}
+.apple-banner .swiper-container {;
+	width: 100%;
+	height: 600px;
+	margin-top: 10px;
+}
+
+
+
+.swiper-button-prev,.swiper-button-next{
+	width: 15%;
+	height: 100%;
+	top:0;
+	background:none;
+	}
+.swiper-button-prev{
+	left:0;}	
+.swiper-button-next{
+	right:0;}	
+.swiper-button-prev span,.swiper-button-next span{
+	display:block;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	margin-top:-32px;
+	border-radius: 100%;
+	background: rgba(180,180,180,0.25) url(../images/arrows.png) no-repeat center 17px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+.swiper-button-next span{
+	background: rgba(180,180,180,0.25) url(../images/arrows.png) no-repeat center -71px;
+	left:auto;
+	right:20px;
+	}
+.swiper-button-prev:hover span,.swiper-button-next:hover span{
+	opacity: .6;
+}
+/*分页器*/
+.apple-banner .swiper-pagination{
+	top:auto;
+	bottom:50px;
+	background:none;
+}
+.apple-banner  .swiper-pagination-bullet {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin: 0 3px;
+	cursor: pointer;
+	background: none;
+	border-radius:0;
+	opacity: 1;
+}
+.apple-banner  .swiper-pagination-bullet span {
+	width: 50px;
+	height: 2px;
+	display: block;
+	background: rgba(128,128,128,0.2);
+}
+.apple-banner .swiper-pagination-bullet-active span{
+    background:gray;
+}
+.apple-banner .autoplay .swiper-pagination-bullet-active span{
+    background: rgba(128,128,128,0.2);
+}
+.apple-banner  .swiper-pagination-bullet i{
+	background: gray;
+	height: 2px;
+	transform:scaleX(0);
+	transform-origin: 0;
+	display: block;
+}
+.apple-banner .autoplay .firsrCurrent i{
+	transition:transform 2.9s linear;
+	transform:scaleX(1);
+}
+.apple-banner .autoplay .current i{
+	transition:transform 4s linear;
+	transform:scaleX(1);
+}
+.apple-banner  .autoplay .replace span{
+  background:gray;
+}
+/*内容样式*/
+
+.slide1 {
+	background: #000 url(../images/temp1.jpg) no-repeat;
+	position: relative;
+	width: 1600px;
+	height: 600px;
+}
+
+.slide1 .title {
+	text-align: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	font-size: 15px;
+	font-weight: normal;
+	color: black;
+}
+
+.slide1 h1{
+	font-size: 40px;
+}
+
+.slide1 .title button{
+	background: black;
+	color: white;
+	width: 130px;
+	height: 40px;
+}
+
+
+.slide1 p{
+	padding: 15px 0 15px 0;
+}
+
+.slide1 a{
+	color: black;
+	margin-left: 30px;
+}
+
+.slide1 a>span{
+	float: none;
+	font-size: 22px;
+	font-weight: 100;
+	margin-left: 10px;
+	transition: all 0.3s;
+}
+
+.slide1 a:hover>span{
+	margin-left: 30px;
+}
+
+.slide2 {
+	background: #f3f3f3 url(../images/temp2.jpg) no-repeat;
+	width: 1600px;
+	height: 600px;
+}
+
+.slide2 .title {
+	width: 620px;
+	height: 230px;
+	text-align: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	font-size: 15px;
+	font-weight: normal;
+	color: white;
+}
+.slide2 .title button{
+	width: 160px;
+	height: 40px;
+	background: white;
+	color: black;
+}
+
+.slide2 p{
+	padding: 15px 0 15px 0;
+}
+
+.slide2 h1 {
+	font-size: 40px;
+}
+
+
+
+
+.slide3 {
+	background: #000 url(../images/temp3.jpg) no-repeat;
+	width: 1600px;
+	height: 600px;
+}
+
+.slide3 .title {
+	text-align: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	font-size: 15px;
+	font-weight: normal;
+	color: black;
+}
+
+.slide3 h1{
+	font-size: 40px;
+}
+
+.slide3 p{
+	padding: 15px 0 15px 0;
+}
+
+.slide3 .title button{
+	background: black;
+	color: white;
+	width: 130px;
+	height: 40px;
+}
+
+.slide4{
+	background: #f3f3f3 url(../images/temp4.jpg) no-repeat;
+	width: 1600px;
+	height: 600px;
+}
+
+.slide4 p{
+	padding: 15px 0 15px 0;
+}
+
+.slide4 .title {
+	width: 620px;
+	height: 230px;
+	text-align: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	font-size: 15px;
+	font-weight: normal;
+	color: black;
+}
+.slide4 .title button{
+	width: 160px;
+	height: 40px;
+	background: black;
+	color: white;
+}
+
+.slide4 p{
+	padding: 15px;
+}
+
+.slide4 h1 {
+	font-size: 40px;
+}
