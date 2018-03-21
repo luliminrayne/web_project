@@ -2,87 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Office</title>
     <link rel="shortcut icon" href="images/favicon.ico"  />
     <link href="css/office_style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/javascript.js" type="text/javascript"></script>
 </head>
 <body>
-    <div id="warp">
-        <div id="top">
-            <div id="logo">
-                <a href="index.html"><img src="images/logo.png"></a>
-            </div>
-            <div class="top_right">
-                <form action="#" method="get">
-                    <span><input title="搜索" placeholder="在Offcie中搜索" type="text"></span>
-                    <span><button type="button"></button></span>
-                </form>
-                <div class="gouwuche"><a href="#"><img src="images/gouwuche.png"></a></div>
-                <div class="login"><a href="#" class="denglu">登录</a></div>
-            </div>
+<div id="container">
+<div id="header">
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">OFFICE</a>
         </div>
-        <div id="header">
-            <div id="navbar">
-                <ul>
-                    <li class="home"><a>Office</a></li>
-                    <li><a href="#">产品</a></li>
-                    <li><a href="#">资讯</a></li>
-                    <li><a href="#">模板</a></li>
-                    <li><a href="#">支持</a></li>
-                </ul>
-                <button>购买OFFICE 365 &gt;</button>
-            </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        产品<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">家用版</a></li>
+                        <li><a href="#">商业版</a></li>
+                        <li><a href="#">教育版</a></li>
+                        <li><a href="#">应用程序</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        资讯<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">培训</a></li>
+                        <li><a href="#">安装程序</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">模板</a></li>
+                <li><a href="#">支持</a></li>
+            </ul>
         </div>
-        <div id="main">
-            <div id="content">
-                <div id="summary">
-                    <div id="bg">
-                        <img src="images/Hero_Holiday_HomePage_1920x650.jpg" width="1600px" height="100%">
-                    </div>
-                    <div class="left">
-                        <h1>成就您的下个365天</h1>
-                        <p>Offcie 让你的下一个365天充满无限可能性。即刻开始。</p>
-                        <button class="button1">家用版</button>
-                        <button class="button1">企业版</button>
-                    </div>
-                    <div class="right">
-                        <img src="images/Icon_PlayButton_152x152.png">
-                        <p>观看视频，了解详细信息</p>
+    </div>
+</nav>
+    <div style="width:250px; float: right; margin-right: 50px; margin-top: -65px;">
+        <form class="bs-example bs-example-form" role="form">
+            <div class="row">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">搜索</button>
+                        </span>
                     </div>
                 </div>
-                <div id="note">
-                    <div class="left">
-                        <h2>Office 365 的特征和功能</h2>
-                        <p>Office 365是一个基于云的订阅服务，汇集了当今人们工作中使用的最佳工具。通过将Excel和Outlook等一流应用与OneDrive和Microsoft Teams等强大的云服务相结合，Office 365可让任何人使用任何设备随时随地地创建和共享内容。</p>
-                    </div>
-                    <div class="right">
-                        <h2>深入了解 Office 365</h2>
-                        <a href="#">家用版</a><span>&gt;</span>
-                        <a href="#">小型企业版</a><span>&gt;</span>
-                        <a href="#">企业版</a><span>&gt;</span>
-                        <a href="#">教育版</a><span>&gt;</span>
-                    </div>
-                    <div class="more">
-                        <div class="video1">
-                            <video src="videos/office安装.mp4" controls></video>
-                            <h2>便捷的下载和安装体验</h2>
-                            <p>观看视频，了解如何通过简单3步下载和安装Office 365。</p>
-                        </div>
-                        <div class="video2">
-                            <video src="videos/使用office.mp4" controls></video>
-                            <h2>使用正版Office的优势</h2>
-                            <p>观看视频，了解使用正版Office365的益处。</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="wrap">
+<div class="jumbotron">
+    <div class="container">
+        <h1 style="color: white">成就您的下个365天</h1>
+        <p style="color: white">Office让你的下一个365天充满无限的可能性。即刻开始。</p>
+        <p>
+            <span><a class="btn btn-primary btn-lg" role="button">
+            家用版
+        </a></span>
+            <span><a class="btn btn-primary btn-lg" role="button">
+                企业版
+            </a></span>
+            <div class="main">
+        <input class="video" href="javascript:;" type=image src="images/Icon_PlayButton_152x152.png" style="float: right">
+            </div>
+        </p>
+
+    </div>
+</div>
+
+    <div id="content">
+        <div class="well" style="height: 230px">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Office 365的特征与功能</h2>
+                <p>Office 365 是一个基于云的订阅服务，汇集了当今人们工作中使用的最佳工具。通过将 Excel 和 Outlook 等一流应用<br>与 OneDrive 和 Microsoft Teams 等强大的云服务相结合，Office 365 可让任何人使用任何设备随时随地创建和共享内容。</p>
+            </div>
+            <div class="col-md-6">
+                <h2>深入了解 Office 365</h2>
+                <p class="link"><a href="#">家用版<span>&gt;</span></a>
+                    <a href="#">小型企业版<span>&gt;</span></a>
+                    <a href="#">企业版<span>&gt;</span></a>
+                    <a href="#">教育版<span>&gt;</span></a></p>
+            </div>
+        </div>
+        </div>
+
+        <div class="well" style="height: 230px">
+        <div class="row">
+            <div class="col-md-3">
+                <video src="videos/office安装.mp4" controls="controls" width="350px" height="190px"></video>
+            </div>
+            <div class="col-md-3">
+                <h2>便捷的下载和安装体验</h2>
+                <p>观看视视频，了解如何通过简单3步下载和安装 Office 365。</p>
+            </div>
+
+            <div class="col-md-3">
+                <video src="videos/使用office.mp4" controls="controls"  width="350px" height="190px"></video>
+            </div>
+            <div class="col-md-3">
+                <h2>使用正版 Office 的优势</h2>
+                <p>观看视频，了解使用正版Office 365 的益处。</p>
             </div>
         </div>
     </div>
+</div>
+</div>
 
     <div id="footer">
         <div class="footer_box">
-            <div class="detailed">
-                <div class="info2">
+            <div class="row">
+                <div class="col-md-2">
                     <ul>
                         <li><h3>新增内容</h3></li>
                         <li class="caidan1"><span><a href="#">Surface Book 2</a></span></li>
@@ -92,7 +135,7 @@
                         <li class="caidan1"><span><a href="#">Windows 10 应用程序</a></span></li>
                     </ul>
                 </div>
-                <div class="info2">
+                <div class="col-md-2">
                     <ul>
                         <li><h3>应用商店和支持</h3></li>
                         <li class="caidan1"><span><a href="#">账户个人资料</a></span></li>
@@ -101,7 +144,7 @@
                         <li class="caidan1"><span><a href="#">支持</a></span></li>
                     </ul>
                 </div>
-                <div class="info2">
+                <div class="col-md-2">
                     <ul>
                         <li><h3>教育</h3></li>
                         <li class="caidan1"><span><a href="#">Microsoft教育领域</a></span></li>
@@ -110,7 +153,7 @@
                         <li class="caidan1"><span><a href="#">Mircosoft Azure教育领域</a></span></li>
                     </ul>
                 </div>
-                <div class="info2">
+                <div class="col-md-2">
                     <ul>
                         <li><h3>企业</h3></li>
                         <li class="caidan1"><span><a href="#">企业</a></span></li>
@@ -122,7 +165,7 @@
                         <li class="caidan1"><span><a href="#">金融服务</a></span></li>
                     </ul>
                 </div>
-                <div class="info2">
+                <div class="col-md-2">
                     <ul>
                         <li><h3>开发人员</h3></li>
                         <li class="caidan1"><span><a href="#">Mircosoft Visual Studio</a></span></li>
@@ -135,7 +178,7 @@
                         <li class="caidan1"><span><a href="#">Office 开发人员中心</a></span></li>
                     </ul>
                 </div>
-                <div class="info2">
+                <div class="col-md-2">
                     <ul>
                         <li><h3>公司</h3></li>
                         <li class="caidan1"><span><a href="#">招贤纳士</a></span></li>
@@ -149,25 +192,41 @@
             </div>
         </div>
 
-        <div class="wangluobeian">
-            <div class="lg_img">
-                <a href="#"><img src="images/ch.png"><span>中文(中国)</span></a>
-
+        <div class="row">
+            <div class="col-md-4">
+                <p><img src="images/ch.png"><a href="#">中文(中国)</a></p>
             </div>
-            <div class="footer_info">
-                <ul>
-                    <li><a href="#">与我们联系</a></li>
-                    <li><a href="#">隐私与Cookie</a></li>
-                    <li><a href="#">使用条款</a></li>
-                    <li><a href="#">商标</a></li>
-                    <li><a href="#">关于我们的广告</a></li>
-                    <li><a href="#">京ICP备09042378号-6</a></li>
-                    <li><a href="#">京公网安备11010802023178</a></li>
-                    <li class="copyright">© Microsoft 2018</li>
-                </ul>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class=col-md-1>
+                        <a href="#">与我们联系</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="隐私与Cookie"></a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#">使用条款</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#">商标</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#">关于我们的广告</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#">京ICP备09042378号-6</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="#">京公网安备 11010802023178</a>
+                    </div>
+                    <div class="col-md-1">
+                        <p>© Microsoft 2018</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
+    </div>
+</div>
 </body>
 </html>

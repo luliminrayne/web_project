@@ -1,0 +1,418 @@
+/*基本样式
+---------------------*/
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    font-size: 12px;
+}
+
+a img{
+    border: none;
+}
+
+ul,li{
+    margin:0; padding:0;list-style: none;float: left;
+}
+
+a{
+    border: none;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.clear{
+    clear: both;
+}
+
+button{
+    border: none;
+}
+/*主框架
+----------------------------------------*/
+#wrap{
+    width:1600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#header{
+    width: 100%;
+}
+
+
+#main{
+    width: 100%;;
+    clear: both;
+    overflow-x: hidden;
+}
+
+#footer{
+    width: 100%;
+    clear: both;
+}
+
+/*顶部
+-------------------------------------------*/
+#header{
+    position: relative;
+}
+#header a{
+    color: #000000;
+    font-size: 14px;
+}
+#header .logo{
+    margin-top: 15px;
+}
+
+#nav1{
+    margin-top: -32px;
+    margin-left: 153px;
+}
+
+#nav1 li{
+    padding: 8px 52px 0 0;
+}
+
+#right{
+    float: right;
+    margin: -25px -25px;
+    padding-right: 30px;
+}
+
+span{float: left;display: inline-block;height: 35px;}
+
+#right form input{
+    width: 250px;
+    height: 33px;
+    border: 1px solid #a9a9a9;
+    border-right: none;
+    padding: 0 5px;
+}
+
+
+#right form button{
+    width: 35px;
+    height: 33px;
+    background: url("../images/serach.png") no-repeat center;
+    border: 1px solid #a9a9a9;
+    border-left:none ;
+}
+
+#right .gouwuche{
+    padding-top: 5px;
+    padding-left:300px ;
+}
+
+#right .login{
+    padding-left: 340px;
+    margin-top: -30px;
+}
+.drop1{
+    width: 1260px;
+    height: 250px;
+    background: #f2f2f2;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    border-top: 17px solid #fff;
+}
+
+
+.drop1 .info1 .caidan{
+    float: none;
+}
+.drop1 .info1 h3{
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.drop1 .everyting{
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+    width: 100%;
+    height: 40px;
+    background: #e6e6e6 ;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+.nav{
+    margin-top: 10px;
+}
+
+.dropdown-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    white-space: nowrap;
+    width: 730px;
+    text-align: center;
+}
+.nav_more_link{
+    padding-left: 330px;
+}
+
+
+
+/*图片推拉展示栏1
+------------------------------------------------------------*/
+    /*style1*/
+
+/* 产品展示栏1
+---------------------------------------------*/
+#product{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#product .ad_info h2{
+	margin-top: 30px;
+}
+#product .ad_info p{
+    padding: 10px 0 10px 0;
+}
+#product .ad_info a{
+	color: #005da6;
+}
+#product .ad_info a>span{
+	float: none;
+	font-size: 22px;
+	font-weight: 100;
+	margin-left: 10px;
+	transition: all 0.3s;
+}
+#product .ad_info a:hover>span{
+	margin-left: 30px;
+}
+/*商城
+--------------------------------------------------*/
+#store{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+#store .store_img{
+    width: 100%;
+    height: 100%;
+}
+#store .store_link h1{
+    font-size: 50px;
+    color: white;
+}
+#store .store_link p{
+    color: white;
+}
+#store .store_link button{
+    width: 130px;
+    height: 45px;
+}
+
+
+#store .store_link{
+    position: absolute;
+    margin-top: -440px;
+    margin-left: 130px;;
+    z-index: 10;
+}
+
+.store_link p{
+    padding: 10px 0 10px 0;
+}
+/*产品展示2
+---------------------------------------------------*/
+#product1 .ad_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#product1 .title{
+    padding-top: 20px;
+    margin-bottom: -30px;
+}
+
+.ad_info1 h2{
+	margin-top: 30px;
+}
+.ad_info1 p{
+    padding: 10px 0 10px 0;
+}
+.ad_info1 a{
+	color: #005da6;
+}
+.ad_info1 a>span{
+	float: none;
+	font-size: 22px;
+	font-weight: 100;
+	margin-left: 10px;
+	transition: all 0.3s;
+}
+.ad_info1 a:hover>span{
+	margin-left: 30px;
+}
+/*图片推拉展示栏2
+---------------------------------------------------*/
+/*style1*/
+
+
+/*官方公众号与微博
+----------------------------------------------------*/
+#more{
+    height: 780px;
+}
+
+.more_link{
+    position:relative;
+    left: 0;
+    width: 1600px;
+    height: 55px;
+    margin-top: 50px;
+}
+
+.more_link .title{
+    width: 110px;
+    height: 25px;
+    float: left;
+    margin-top: 8px;
+}
+.more_link .title p{
+    font-size: 15px;
+    color: #909090;
+}
+
+.more_link .links{
+    width: 75px;
+    height: 35px;
+    float: left;
+    padding-left: 5px;
+}
+.more_link .links .wechat{
+    width: 35px;
+    height: 35px;
+    display: inline;
+    padding-left: 3px;
+}
+
+.more_link .links .wechat .hidden{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    z-index: 20;
+    margin-left: 15px;
+}
+
+.more_link .links .weibo{
+    width: 35px;
+    height: 35px;
+    display: inline;
+}
+
+
+/*底部信息展示
+---------------------------------------------------*/
+#footer{
+    position: relative;
+    background: #f2f2f2;
+}
+#footer .footer_box{
+	padding: 50px 50px 0 50px;
+}
+#footer a{
+    color: #707070;
+}
+
+.detailed{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailed .info2 .caidan1{
+    float: none;
+    clear: both;
+}
+#footer .info2 h3{
+	margin-bottom: 15px;
+}
+#footer .wangluobeian{
+    height: 40px;
+    line-height: 40px;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.wangluobeian .lg_img{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5%;
+}
+.wangluobeian .lg_img span{
+	font-size: 12px;
+	float: right;
+}
+.wangluobeian .lg_img img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.wangluobeian ul li{
+	font-size: 12px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
